@@ -1,5 +1,17 @@
 # Change Log
 
+## [2.1.5]
+
+- Add support for prompt caching for new Claude model IDs on OpenRouter (e.g. `anthropic/claude-3.5-sonnet-20240620`)
+
+## [2.1.4]
+
+- AWS Bedrock fixes (add missing regions, support for cross-region inference, and older Sonnet model for regions where new model is not available)
+
+## [2.1.3]
+
+- Add support for Claude 3.5 Haiku, 66% cheaper than Sonnet with similar intelligence
+
 ## [2.1.2]
 
 - Misc. bug fixes
