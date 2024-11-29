@@ -1,8 +1,8 @@
 {
-  "name": "ivwv-claude-dev",
-  "displayName": "ivwv-Cline (prev. Claude Dev)",
-  "description": "自主编码代理就在你的集成开发环境中，能够创建/编辑文件、执行命令等，每一步都经过你的许可。",
-  "version": "3.0.2",
+  "name": "claude-dev",
+  "displayName": "Cline (prev. Claude Dev)",
+  "description": "Autonomous coding agent right in your IDE, capable of creating/editing files, running commands, using the browser, and more with your permission every step of the way.",
+  "version": "2.1.6",
   "icon": "assets/icons/icon.png",
   "galleryBanner": {
     "color": "#617A91",
@@ -12,10 +12,10 @@
     "vscode": "^1.84.0"
   },
   "author": {
-    "name": "ivwv"
+    "name": "Cline Bot Inc."
   },
   "license": "Apache-2.0",
-  "publisher": "ivwv",
+  "publisher": "saoudrizwan",
   "repository": {
     "type": "git",
     "url": "https://github.com/cline/cline"
@@ -127,6 +127,8 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src --ext ts",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
     "test": "vscode-test",
     "install:all": "npm install && cd webview-ui && npm install",
     "start:webview": "cd webview-ui && npm run start",
@@ -146,6 +148,7 @@
     "esbuild": "^0.21.5",
     "eslint": "^8.57.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
     "typescript": "^5.4.5"
   },
   "dependencies": {
@@ -178,7 +181,6 @@
     "strip-ansi": "^7.1.0",
     "tree-sitter-wasms": "^0.1.11",
     "turndown": "^7.2.0",
-    "undici": "^6.20.1",
     "web-tree-sitter": "^0.22.6"
   }
 }
